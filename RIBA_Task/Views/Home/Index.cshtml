@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>RIBA Development Task Web Application</h2>
+</div>
+
+@using (Html.BeginForm("Index", "Orders", FormMethod.Get, new { @class = "form-horizontal", role = "form" }))
+{
+  
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="See Orders" />
+            </div>
+        </div>
+}
